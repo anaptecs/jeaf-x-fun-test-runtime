@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Parent POM contains all general settings for building and releasing of all JEAF projects. -->
+	<parent>
+		<groupId>com.anaptecs.jeaf</groupId>
+		<artifactId>jeaf-module-project-parent</artifactId>
+		<version>1.8.0</version>
+	</parent>
+
+	<groupId>com.anaptecs.jeaf.x-fun</groupId>
+	<artifactId>jeaf-x-fun-test-runtime-project</artifactId>
+	<version>1.8.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>JEAF X-Fun Test Runtime Project</name>
+	<description>Project contains test implementation of JEAF X-Fun interfaces. This library is only intended to be used in JUnit tests. Please do not use this implementation for production.</description>
+	<url>https://www.anaptecs.de/jeaf</url>
+
+	<scm>
+		<connection>scm:git:https://bitbucket.org/anaptecs/jeaf-x-fun-test-runtime.git</connection>
+		<developerConnection>scm:git:https://bitbucket.org/anaptecs/jeaf-x-fun-test-runtime.git</developerConnection>
+		<url>https://bitbucket.org/anaptecs/jeaf-x-fun-test-runtime</url>
+		<tag>HEAD</tag>
+	</scm>
+	
+	<properties>
+		<jeaf.x-fun.api.version>1.8.0</jeaf.x-fun.api.version>
+	</properties>
+
+	<modules>
+		<module>jeaf-x-fun-test-runtime</module>
+	</modules>
+
+</project>
